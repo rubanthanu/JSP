@@ -1,4 +1,6 @@
-x="Hello World";
-console.log(x.charAt(Math.ceil(Math.random()*x.length-1)));
-let y =prompt("Enter your name");
-console.log(y ?? "Name not provided");
+const myarray = [1, 2, 3, 4, 5];
+const result = myarray.join("-");
+const x = result.split("-");
+console.log(result);
+console.log(x);
+
