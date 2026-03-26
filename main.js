@@ -1,2 +1,2 @@
-console.log("Hello World");
-alert("Welcome to JavaScript");
+myvariable="matahamatics";
+console.log(myvariable.toUpperCase());  
