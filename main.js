@@ -1,4 +1,2 @@
-myvariable="42";
-myfloat=42.0;
-console.log(myvariable.toUpperCase());  
-console.log(Number(myvariable)===myfloat);
+x="Hello World";
+console.log(x.charAt(Math.ceil(Math.random()*x.length-1)));
