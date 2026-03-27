@@ -1,6 +1,10 @@
-const myarray = [1, 2, 3, 4, 5];
-const result = myarray.join("-");
-const x = result.split("-");
-console.log(result);
-console.log(x);
+const myobj={
+    name:"John",
+    age:30,
+    city:"New York"};
+console.log(Object.keys(myobj)  );
 
+for (let x in myobj) {
+    console.log(x);
+}
+console.log(myobj.hasOwnProperty("name")  );
