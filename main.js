@@ -1,11 +1,18 @@
-const obj={
-    name:"John",
-    age:30,
-    city:"New York"
-};
- 
-console.log(obj.name); // Output: John
-const sendJson=JSON.stringify(obj);
-console.log(sendJson); // Output: {"name":"John","age":30,"city":"New York"}
-const recive =JSON.parse(sendJson);
-console.log(typeof recive); // Output: string
+const x=document.getElementById("view1");
+console.log(x);
+const y=document.querySelector("#view1");
+console.log(y);
+const z=document.querySelectorAll(".view2");
+console.log(z);
+const divs=view1.querySelectorAll("div");
+console.log(divs);
+const divs2=view1.getElementsByTagName("div");
+console.log(divs2);
+const evenDivs=view1.querySelectorAll("div:nth-child(even)");
+console.log(evenDivs);
+const oddDivs=view1.querySelectorAll("div:nth-child(odd)");
+console.log(oddDivs);
+const text=document.querySelector("nav h1");
+text.innerHTML='<h1>JavaScript</h1>';
+console.log(evenDivs[0].parentElement);
+
