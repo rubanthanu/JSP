@@ -1,30 +1,24 @@
-const x=document.getElementById("view1");
-console.log(x);
-const y=document.querySelector("#view1");
-console.log(y);
-const z=document.querySelectorAll(".view2");
-console.log(z);
-const divs=view1.querySelectorAll("div");
-console.log(divs);
-const divs2=view1.getElementsByTagName("div");
-console.log(divs2);
-const dosome =() => {
-    alert("Hello World");
+document.addEventListener("readystatechange", (event) => {
+    if(event.target.readyState === "complete") {
+        console.log("DOM fully loaded and parsed");
+        initApp();
 
-};
-function dosome2(){
-    alert("Hello World");
+}});
+
+function initApp() {
+    console.log("Initializing application...");
+    // Add your initialization code here
+    const myContent = ["Earn", "Grow", "Give"];
+const myObject = {
+name: "Dhuddu",
+myContent: ["Earn", "Grow", "Give"],
+logName: function() {
+console.log(this.name);
 }
-divs2[0].addEventListener("click",dosome2);
-
-
-document.addEventListener
-("readystatechange", (event) => {
-if (event.target.readyState ===
-"complete") {
-console.log("complete");
-initApp();
-})
-const initApp = () => {
-    console.log("App initialized");
 };
+
+window.localStorage.setItem("myLocalStore", JSON.stringify(myObject));
+
+const myLocalData = JSON.parse(localStorage.getItem("myLocalStore"));
+console.log(myLocalData);
+}
