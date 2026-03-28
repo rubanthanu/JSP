@@ -8,11 +8,23 @@ const divs=view1.querySelectorAll("div");
 console.log(divs);
 const divs2=view1.getElementsByTagName("div");
 console.log(divs2);
-const evenDivs=view1.querySelectorAll("div:nth-child(even)");
-console.log(evenDivs);
-const oddDivs=view1.querySelectorAll("div:nth-child(odd)");
-console.log(oddDivs);
-const text=document.querySelector("nav h1");
-text.innerHTML='<h1>JavaScript</h1>';
-console.log(evenDivs[0].parentElement);
+const dosome =() => {
+    alert("Hello World");
 
+};
+function dosome2(){
+    alert("Hello World");
+}
+divs2[0].addEventListener("click",dosome2);
+
+
+document.addEventListener
+("readystatechange", (event) => {
+if (event.target.readyState ===
+"complete") {
+console.log("complete");
+initApp();
+})
+const initApp = () => {
+    console.log("App initialized");
+};
